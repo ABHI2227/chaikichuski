@@ -24,6 +24,10 @@ app.get(`/login`,(req, res) =>{
     res.send(`<h2>chai aur code</h2>`)
  })
 
+ app.get(`/about`,(req, res) => {
+  res.send(`<h1>Tell me about yourself</h3>`)
+ })
+
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
